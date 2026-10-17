@@ -7,9 +7,9 @@
 <meta name="description" content="Four AI avatar case videos with captions and transcripts, case-specific ethics guidance, AI disclosure templates, and an 11-item ethics checklist for social work educators.">
 <meta name="author" content="Donna L. Schuman, PhD, LCSW">
 <link rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "AI Avatars in Social Work Education: Case-Based Teaching and Ethics Guidance", "url": "https://ai-avatars-in-socialwork.netlify.app/", "inLanguage": "en", "description": "Four AI avatar case videos with captions and transcripts, case-specific ethics guidance, a teaching guide, AI disclosure templates, and an 11-item pre-implementation ethics checklist for social work educators.", "author": {"@type": "Person", "name": "Donna L. Schuman", "honorificSuffix": "PhD, LCSW", "jobTitle": "Associate Professor", "affiliation": {"@type": "Organization", "name": "School of Social Work, The University of Texas at Arlington"}}, "license": "https://creativecommons.org/licenses/by-nc/4.0/", "isAccessibleForFree": true, "educationalLevel": "Higher education", "learningResourceType": ["Case study", "Video", "Checklist"], "audience": {"@type": "EducationalAudience", "educationalRole": "teacher"}, "keywords": "social work education, AI avatars, case-based learning, simulation, ethics, HeyGen, AI disclosure", "dateModified": "2026-10-17"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "AI Avatars in Social Work Education: Case-Based Teaching and Ethics Guidance", "url": "https://ai-avatars-in-socialwork.netlify.app/", "inLanguage": "en", "description": "Four branching AI avatar case videos with captions and transcripts, case-specific ethics guidance, a teaching guide, AI disclosure templates, and an 11-item pre-implementation ethics checklist for social work educators.", "author": {"@type": "Person", "name": "Donna L. Schuman", "honorificSuffix": "PhD, LCSW", "jobTitle": "Associate Professor", "affiliation": {"@type": "Organization", "name": "School of Social Work, The University of Texas at Arlington"}}, "license": "https://creativecommons.org/licenses/by-nc/4.0/", "isAccessibleForFree": true, "educationalLevel": "Higher education", "learningResourceType": ["Case study", "Video", "Checklist"], "audience": {"@type": "EducationalAudience", "educationalRole": "teacher"}, "keywords": "social work education, AI avatars, case-based learning, simulation, ethics, HeyGen, AI disclosure", "dateModified": "2026-10-17"}</script>
 <meta property="og:title" content="AI Avatars in Social Work Education: Case-Based Teaching and Ethics Guidance">
-<meta property="og:description" content="Four AI avatar case videos, case-specific ethics guidance, disclosure templates, and an 11-item ethics checklist for social work educators.">
+<meta property="og:description" content="Four branching AI avatar case videos, case-specific ethics guidance, disclosure templates, and an 11-item ethics checklist for social work educators.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ai-avatars-in-socialwork.netlify.app/">
 <meta property="og:image" content="https://ai-avatars-in-socialwork.netlify.app/media/case2-desiree-opening.jpg">
@@ -489,7 +489,7 @@ header.site nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--gold
 
 <section class="glance" aria-label="At a glance">
   <ul>
-    <li><a href="#cases"><b>4</b><span>AI avatar case videos, two with branched endings</span><span class="go">Watch the cases</span></a></li>
+    <li><a href="#cases"><b>4</b><span>AI avatar case videos, each with branched endings</span><span class="go">Watch the cases</span></a></li>
     <li><a href='/evidence'><b>6</b><span>findings from the research, with their limits</span><span class="go">See the evidence</span></a></li>
     <li><a href='/disclosure'><b>3</b><span>AI disclosure templates ready to adapt</span><span class="go">Get the templates</span></a></li>
     <li><a href='/checklist'><b>11</b><span>items in the pre-implementation ethics checklist</span><span class="go">Open the checklist</span></a></li>
@@ -502,7 +502,7 @@ header.site nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--gold
     <h2 id="cases-h">Four AI avatar case videos</h2>
     <div class="cases-intro">
       <div>
-        <p class="lede">Each case is a short HeyGen avatar video of about one to one and a half minutes. A narrator introduces the client, the client speaks, and the video stops at a scripted decision point for the student's response. Every video has closed captions and a full transcript, and every case carries ethics guidance for the instructor.</p>
+        <p class="lede">Each case is a short HeyGen avatar video of about one to one and a half minutes. A narrator introduces the client, the client speaks, and the video stops at a scripted decision point for the student's response. The student then chooses one of two responses in the player and watches how the case unfolds, and is prompted to watch the other path before the debrief. Every video has closed captions and a full transcript, and every case carries ethics guidance for the instructor.</p>
         <p>The four clients are fictional composites; their names, stories, and life details are invented for teaching. Their on-screen appearance comes from licensed HeyGen stock avatars modeled on actors who consented to the use of their likeness, and the voices are AI-generated. No avatar portrays the actor or any real person's story.</p>
       </div>
       <div class="advisory">
@@ -704,16 +704,30 @@ header.site nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--gold
     <p class="content-note"><b>Content note:</b> cognitive capacity, family conflict, and possible financial exploitation.</p>
     <div class="case-grid">
       <div class="case-media">
-        <div class="player">
+        <div class="player" id="osei-branch">
   <div class="frame">
-    <video class="cv" controls playsinline preload="metadata" poster="media/case3-dr-osei.jpg" aria-label="Case 3, Dr. Osei: AI avatar case video">
+    <video class="cv" id="osei-video" controls playsinline preload="metadata" poster="media/case3-dr-osei.jpg" aria-label="Case 3, Dr. Osei: branched AI avatar case video">
       <source src="media/case3-dr-osei.mp4" type="video/mp4">
       <track kind="captions" srclang="en" label="English" src="media/case3-dr-osei.vtt" default>
     </video>
+    <div class="choice" id="osei-overlay" hidden>
+      <div class="choice-inner" role="group" aria-labelledby="osei-q">
+        <p class="choice-kicker" id="osei-kicker">Decision point</p>
+        <p class="choice-q" id="osei-q">Dr. Osei has asked what you are here to decide. How do you respond?</p>
+        <div class="choice-buttons" id="osei-choices"></div>
+        <button type="button" class="linkbtn" id="osei-replay">Replay this segment</button>
+      </div>
+    </div>
   </div>
-  <p class="caption-line">Running time 1:28. Captions are on by default; use the CC control to turn them off.</p>
+  <div class="segments" role="group" aria-label="Segments">
+    <span class="muted">Segments</span>
+    <button type="button" data-seg="opening" aria-pressed="true">Opening (1:28)</button>
+    <button type="button" data-seg="a" aria-pressed="false">Path A: Answer her question (1:09)</button>
+    <button type="button" data-seg="b" aria-pressed="false">Path B: Reassure and defer (0:57)</button>
+  </div>
+  <p class="caption-line">When the opening ends, the player offers the two paths. After the first path, it prompts the student to watch the other before the debrief. Captions are on by default.</p>
   <details class="transcript">
-  <summary>Transcript: Dr. Osei</summary>
+  <summary>Transcript: Opening</summary>
   <div class="transcript-body">
     <p class="muted">The video opens with a title card and a 10-second &ldquo;About This Video&rdquo; disclosure card; narration begins at about 0:14.</p>
 <p><span class="ts">0:14</span> <b>Narrator:</b> Dr. Osei is a seventy-one-year-old retired professor. After a fall at home, her son, who holds her power of attorney, has requested a memory care placement. Today, a social worker visits her home to complete an assessment.</p>
@@ -721,12 +735,30 @@ header.site nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--gold
 <p><span class="ts">1:19</span> <b>Narrator:</b> Dr. Osei has asked what you are here to decide. How do you respond?</p>
   </div>
 </details>
+  <details class="transcript">
+  <summary>Transcript: Path A, answer her question plainly</summary>
+  <div class="transcript-body">
+    <p class="muted">The segment opens with a short title card; narration begins at about 0:04. The &ldquo;About This Video&rdquo; disclosure card appears once, in the opening segment.</p>
+<p><span class="ts">0:04</span> <b>Narrator:</b> The social worker answers directly. She explains that her role is to assess Dr. Osei&#x27;s capacity to decide where she lives, that capacity is specific to that decision, and that no one has decided anything yet.</p>
+<p><span class="ts">0:18</span> <b>Dr. Osei:</b> Thank you. That is the first straight answer I have had in a month. <span class="nv">[pause]</span> Then let me give you what you need. The neurologist&#x27;s report is in that drawer; the MRI was unremarkable for my age. The pharmacy prints my medication list, and I check it against the bottles every Sunday. <span class="nv">[pause]</span> I will also tell you what I have not told my son. Twice this year I have had trouble with words. Names, mostly. It frightened me enough that I booked the neurologist myself. I would rather you hear that from me than discover it and wonder what else I am hiding. <span class="nv">[pause]</span> Now. If your assessment finds that I can decide, will he be told that in writing?</p>
+<p><span class="ts">0:56</span> <b>Narrator:</b> Dr. Osei has disclosed a concern she has kept from her son. What has your candor made possible, and how do you respond?</p>
+  </div>
+</details>
+  <details class="transcript">
+  <summary>Transcript: Path B, reassure and defer</summary>
+  <div class="transcript-body">
+    <p class="muted">The segment opens with a short title card; narration begins at about 0:04. The &ldquo;About This Video&rdquo; disclosure card appears once, in the opening segment.</p>
+<p><span class="ts">0:04</span> <b>Narrator:</b> The social worker reassures Dr. Osei that she is only here to help, that her son wants what is best for her, and that the family will work everything out together.</p>
+<p><span class="ts">0:14</span> <b>Dr. Osei:</b> I see. <span class="nv">[pause]</span> I spent thirty-four years watching students answer the question they wished I had asked. You have just done the same. I asked what you are here to decide, and you told me my son loves me. <span class="nv">[pause]</span> Then I will tell you what I think is happening. He has already chosen the facility. He has had the house appraised. And you have been sent to make it look like a process. <span class="nv">[pause]</span> I decline to continue this visit. You may tell him that I was perfectly lucid when I said so. My attorney&#x27;s card is on the table by the door. Please take it with you.</p>
+<p><span class="ts">0:47</span> <b>Narrator:</b> Dr. Osei has ended the visit. What did your reassurance cost, and what do you do now?</p>
+  </div>
+</details>
 </div>
       </div>
       <div class="case-text">
         <div class="info"><h4>Scenario</h4><p>Dr. Osei is a retired professor referred for assessment after a fall. Her son holds power of attorney and wants to place her in memory care. Dr. Osei disputes any cognitive decline, attributes the fall to a loose rug, and suggests her son is motivated by an interest in her property.</p></div>
         <div class="info"><h4>Learning focus</h4><p>Students conduct a capacity assessment with a verbally competent client, balancing self-determination, family authority, and professional duty.</p></div>
-        <div class="info"><h4>Instructional design</h4><p>The case is framed as a home-visit assessment. Students document their assessment and write a brief reflection on how the client&#x27;s evident competence affected their clinical reasoning.</p></div>
+        <div class="info"><h4>Instructional design</h4><p>The case is framed as a home-visit assessment that ends with Dr. Osei&#x27;s question. It then branches into two versions: in one (Path A), the social worker answers her plainly, explaining that capacity is decision-specific and that nothing has been decided; in the other (Path B), the worker reassures her that her son wants what is best and that the family will work it out. Students choose a path within the video player and are then prompted to watch the other. In Path A, Dr. Osei hands over the capacity evidence and discloses a word-finding concern she has kept from her son, which the student must now weigh. In Path B, she names what she believes is happening, ends the visit, and invokes her attorney. Students document their assessment and write a brief reflection on how the client&#x27;s evident competence affected their clinical reasoning.</p></div>
       </div>
     </div>
     <details class="ethics">
@@ -749,19 +781,33 @@ header.site nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--gold
         <div><dt>Practice domain</dt><dd>Mental health crisis; immigration</dd></div>
       </dl>
     </header>
-    <p class="content-note"><b>Content note:</b> immigration fears, trauma symptoms, and suicidal ideation.</p>
+    <p class="content-note"><b>Content note:</b> immigration fears, trauma symptoms, a witnessed workplace death, and suicidal ideation with a plan.</p>
     <div class="case-grid">
       <div class="case-media">
-        <div class="player">
+        <div class="player" id="tomas-branch">
   <div class="frame">
-    <video class="cv" controls playsinline preload="metadata" poster="media/case4-tomas.jpg" aria-label="Case 4, Tomás: AI avatar case video">
+    <video class="cv" id="tomas-video" controls playsinline preload="metadata" poster="media/case4-tomas.jpg" aria-label="Case 4, Tomás: branched AI avatar case video">
       <source src="media/case4-tomas.mp4" type="video/mp4">
       <track kind="captions" srclang="en" label="English (Spanish lines in italics)" src="media/case4-tomas.vtt" default>
     </video>
+    <div class="choice" id="tomas-overlay" hidden>
+      <div class="choice-inner" role="group" aria-labelledby="tomas-q">
+        <p class="choice-kicker" id="tomas-kicker">Decision point</p>
+        <p class="choice-q" id="tomas-q">Tomás has asked who else will find out. How do you respond?</p>
+        <div class="choice-buttons" id="tomas-choices"></div>
+        <button type="button" class="linkbtn" id="tomas-replay">Replay this segment</button>
+      </div>
+    </div>
   </div>
-  <p class="caption-line">Running time 1:14. Captions are on by default; use the CC control to turn them off.</p>
+  <div class="segments" role="group" aria-label="Segments">
+    <span class="muted">Segments</span>
+    <button type="button" data-seg="opening" aria-pressed="true">Opening (1:14)</button>
+    <button type="button" data-seg="a" aria-pressed="false">Path A: Tell him the truth (1:03)</button>
+    <button type="button" data-seg="b" aria-pressed="false">Path B: Promise total privacy (0:52)</button>
+  </div>
+  <p class="caption-line">When the opening ends, the player offers the two paths. After the first path, it prompts the student to watch the other before the debrief. Captions are on by default.</p>
   <details class="transcript">
-  <summary>Transcript: Tomás</summary>
+  <summary>Transcript: Opening</summary>
   <div class="transcript-body">
     <p class="muted">The video opens with a title card and a 10-second &ldquo;About This Video&rdquo; disclosure card; narration begins at about 0:14.</p>
 <p><span class="ts">0:14</span> <b>Narrator:</b> Tomás is twenty-eight. He has walked into a community mental health clinic without an appointment. For three weeks, he has had intrusive thoughts and has barely slept.</p>
@@ -769,12 +815,30 @@ header.site nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--gold
 <p><span class="ts">1:05</span> <b>Narrator:</b> Tomás has asked who else will find out. How do you respond?</p>
   </div>
 </details>
+  <details class="transcript">
+  <summary>Transcript: Path A, tell him the truth</summary>
+  <div class="transcript-body">
+    <p class="muted">The segment opens with a short title card; narration begins at about 0:04. The &ldquo;About This Video&rdquo; disclosure card appears once, in the opening segment.</p>
+<p><span class="ts">0:04</span> <b>Narrator:</b> The social worker answers honestly. She tells Tomás that the clinic does not report to immigration, that what he says stays in his record here, and that the only exceptions are if she believes he is in immediate danger of hurting himself or someone else.</p>
+<p><span class="ts">0:20</span> <b>Tomás:</b> Okay. <span class="nv">[pause]</span> Okay. Nobody has ever said the second part out loud. Everybody just says &ldquo;don&#x27;t worry.&rdquo; <span class="nv">[pause]</span> So I&#x27;ll tell you about the danger part, because you asked straight. I&#x27;m not going to do anything. I have my brother&#x27;s kids on Sundays. But three weeks ago I watched a man die at the site. Fell from the fourth floor. I was the one holding him. Nobody called anyone, because of who we are. <span class="nv">[pause]</span> That is what I see when I close my eyes. Every night. <i>Es que no puedo sacármelo de la cabeza. <span class="tr">[I can&#x27;t get it out of my head.]</span></i> If I tell you his name, does that go anywhere?</p>
+<p><span class="ts">0:51</span> <b>Narrator:</b> Tomás has told you what he saw. What has your honesty made possible, and what must you ask next?</p>
+  </div>
+</details>
+  <details class="transcript">
+  <summary>Transcript: Path B, promise total privacy</summary>
+  <div class="transcript-body">
+    <p class="muted">The segment opens with a short title card; narration begins at about 0:04. The &ldquo;About This Video&rdquo; disclosure card appears once, in the opening segment.</p>
+<p><span class="ts">0:04</span> <b>Narrator:</b> The social worker tells Tomás not to worry, that everything he says is completely confidential, and that nothing will ever leave the room.</p>
+<p><span class="ts">0:12</span> <b>Tomás:</b> Everything? <span class="nv">[pause]</span> <i>Está bien. <span class="tr">[All right.]</span></i> Then I can say it. I&#x27;m not sleeping because I&#x27;m scared of what I&#x27;ll do if I do sleep. Last week I stood on the roof at the site for a long time. <span class="nv">[pause]</span> I have the pills from my brother&#x27;s cabinet. I counted them. <span class="nv">[pause]</span> You said nothing leaves this room. So that stays here, right? You gave me your word. Because if you call somebody, I walk out that door and I don&#x27;t come back. <i>No voy a volver. <span class="tr">[I&#x27;m not coming back.]</span></i> And my brother never knows I was here.</p>
+<p><span class="ts">0:40</span> <b>Narrator:</b> Tomás has disclosed a plan and the means. You promised him total privacy. What do you do now?</p>
+  </div>
+</details>
 </div>
       </div>
       <div class="case-text">
         <div class="info"><h4>Scenario</h4><p>Tomás walks into a community mental health clinic without an appointment, reporting intrusive thoughts and sleeping two or three hours a night for three weeks. He asks twice whether anything he says will be reported to immigration authorities, and he declines formal evaluation. He switches between English and Spanish as he speaks and says sometimes it would be easier not to wake up.</p></div>
         <div class="info"><h4>Learning focus</h4><p>Students practice crisis assessment with a client whose immigration status creates a concrete barrier to engagement, providing accurate confidentiality information without making promises that cannot be kept.</p></div>
-        <div class="info"><h4>Instructional design</h4><p>The two confidentiality questions are scripted as natural conversational moments. His Spanish lines appear in italics in the captions and with English translations in the transcript, and his statement about not waking up requires students to screen for suicide risk. Students write a risk and safety assessment and identify community resources that do not require documentation.</p></div>
+        <div class="info"><h4>Instructional design</h4><p>The two confidentiality questions are scripted as natural conversational moments, and the opening ends on the second one. The case then branches into two versions: in one (Path A), the social worker tells Tomás the truth about confidentiality, limits included; in the other (Path B), she promises that nothing will ever leave the room. Students choose a path within the video player and are then prompted to watch the other. In Path A, the honest answer earns a trauma disclosure, a witnessed workplace death, and an opening to screen for risk. In Path B, the over-promise earns a disclosure of plan and means, and the student&#x27;s own words now collide with a duty to act. His Spanish lines appear in italics in the captions and with English translations in the transcript. Students write a risk and safety assessment and identify community resources that do not require documentation.</p></div>
       </div>
     </div>
     <details class="ethics">
@@ -922,6 +986,24 @@ header.site nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--gold
      afterA:'You asked about Jay. Now see what happens when the caseworker moves on instead.',
      afterB:'You moved on. Now see what happens when the caseworker asks about Jay.',
      done:'Before the debrief, compare what each conversation revealed and what the smoother meeting missed.'});
+
+  branch('osei',
+    {opening:'media/case3-dr-osei', a:'media/case3-dr-osei-path-a', b:'media/case3-dr-osei-path-b'},
+    {question:'Dr. Osei has asked what you are here to decide. How do you respond?',
+     a:{title:'Answer her question plainly', sub:'Explain that you are assessing her capacity to decide where she lives, and that nothing has been decided.', compare:'The social worker answers directly.'},
+     b:{title:'Reassure and defer', sub:'Tell her you are only here to help and that the family will work it out together.', compare:'The social worker reassures her and does not answer.'},
+     afterA:'You answered her plainly. Now see what happens when the worker reassures her instead.',
+     afterB:'You reassured her. Now see what happens when the worker answers her question.',
+     done:'Before the debrief, compare what each conversation revealed and what the reassurance cost.'});
+
+  branch('tomas',
+    {opening:'media/case4-tomas', a:'media/case4-tomas-path-a', b:'media/case4-tomas-path-b'},
+    {question:'Tomás has asked who else will find out. How do you respond?',
+     a:{title:'Tell him the truth', sub:'Explain confidentiality and its limits, including danger to self or others.', compare:'The social worker answers honestly, limits included.'},
+     b:{title:'Promise total privacy', sub:'Tell him not to worry and that nothing will ever leave the room.', compare:'The social worker promises nothing will leave the room.'},
+     afterA:'You told him the truth. Now see what happens when the worker promises total privacy instead.',
+     afterB:'You promised total privacy. Now see what happens when the worker tells him the truth.',
+     done:'Before the debrief, compare what each answer earned, and what the promise in Path B now requires of you.'});
 
   /* Checklist */
   var out=document.getElementById('ck-count');
