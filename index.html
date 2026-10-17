@@ -7,7 +7,7 @@
 <meta name="description" content="Four AI avatar case videos with captions and transcripts, case-specific ethics guidance, AI disclosure templates, and an 11-item ethics checklist for social work educators.">
 <meta name="author" content="Donna L. Schuman, PhD, LCSW">
 <link rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "AI Avatars in Social Work Education: Case-Based Teaching and Ethics Guidance", "url": "https://ai-avatars-in-socialwork.netlify.app/", "inLanguage": "en", "description": "Four AI avatar case videos with captions and transcripts, case-specific ethics guidance, a teaching guide, AI disclosure templates, and an 11-item pre-implementation ethics checklist for social work educators.", "author": {"@type": "Person", "name": "Donna L. Schuman", "honorificSuffix": "PhD, LCSW", "jobTitle": "Associate Professor", "affiliation": {"@type": "Organization", "name": "School of Social Work, The University of Texas at Arlington"}}, "license": "https://creativecommons.org/licenses/by-nc/4.0/", "isAccessibleForFree": true, "educationalLevel": "Higher education", "learningResourceType": ["Case study", "Video", "Checklist"], "audience": {"@type": "EducationalAudience", "educationalRole": "teacher"}, "keywords": "social work education, AI avatars, case-based learning, simulation, ethics, HeyGen, AI disclosure", "dateModified": "2026-09-23"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "AI Avatars in Social Work Education: Case-Based Teaching and Ethics Guidance", "url": "https://ai-avatars-in-socialwork.netlify.app/", "inLanguage": "en", "description": "Four AI avatar case videos with captions and transcripts, case-specific ethics guidance, a teaching guide, AI disclosure templates, and an 11-item pre-implementation ethics checklist for social work educators.", "author": {"@type": "Person", "name": "Donna L. Schuman", "honorificSuffix": "PhD, LCSW", "jobTitle": "Associate Professor", "affiliation": {"@type": "Organization", "name": "School of Social Work, The University of Texas at Arlington"}}, "license": "https://creativecommons.org/licenses/by-nc/4.0/", "isAccessibleForFree": true, "educationalLevel": "Higher education", "learningResourceType": ["Case study", "Video", "Checklist"], "audience": {"@type": "EducationalAudience", "educationalRole": "teacher"}, "keywords": "social work education, AI avatars, case-based learning, simulation, ethics, HeyGen, AI disclosure", "dateModified": "2026-10-17"}</script>
 <meta property="og:title" content="AI Avatars in Social Work Education: Case-Based Teaching and Ethics Guidance">
 <meta property="og:description" content="Four AI avatar case videos, case-specific ethics guidance, disclosure templates, and an 11-item ethics checklist for social work educators.">
 <meta property="og:type" content="website">
@@ -489,7 +489,7 @@ header.site nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--gold
 
 <section class="glance" aria-label="At a glance">
   <ul>
-    <li><a href="#cases"><b>4</b><span>AI avatar case videos, one with branched endings</span><span class="go">Watch the cases</span></a></li>
+    <li><a href="#cases"><b>4</b><span>AI avatar case videos, two with branched endings</span><span class="go">Watch the cases</span></a></li>
     <li><a href='/evidence'><b>6</b><span>findings from the research, with their limits</span><span class="go">See the evidence</span></a></li>
     <li><a href='/disclosure'><b>3</b><span>AI disclosure templates ready to adapt</span><span class="go">Get the templates</span></a></li>
     <li><a href='/checklist'><b>11</b><span>items in the pre-implementation ethics checklist</span><span class="go">Open the checklist</span></a></li>
@@ -541,19 +541,33 @@ header.site nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--gold
         <div><dt>Practice domain</dt><dd>Addiction and housing instability; veteran services</dd></div>
       </dl>
     </header>
-    <p class="content-note"><b>Content note:</b> substance use, combat injury, and housing instability.</p>
+    <p class="content-note"><b>Content note:</b> substance use, overdose risk, combat injury, and housing instability.</p>
     <div class="case-grid">
       <div class="case-media">
-        <div class="player">
+        <div class="player" id="marcus-branch">
   <div class="frame">
-    <video class="cv" controls playsinline preload="metadata" poster="media/case1-marcus.jpg" aria-label="Case 1, Marcus: AI avatar case video">
+    <video class="cv" id="marcus-video" controls playsinline preload="metadata" poster="media/case1-marcus.jpg" aria-label="Case 1, Marcus: branched AI avatar case video">
       <source src="media/case1-marcus.mp4" type="video/mp4">
       <track kind="captions" srclang="en" label="English" src="media/case1-marcus.vtt" default>
     </video>
+    <div class="choice" id="marcus-overlay" hidden>
+      <div class="choice-inner" role="group" aria-labelledby="marcus-q">
+        <p class="choice-kicker" id="marcus-kicker">Decision point</p>
+        <p class="choice-q" id="marcus-q">You have heard Marcus&#x27;s story. How do you respond?</p>
+        <div class="choice-buttons" id="marcus-choices"></div>
+        <button type="button" class="linkbtn" id="marcus-replay">Replay this segment</button>
+      </div>
+    </div>
   </div>
-  <p class="caption-line">Running time 1:07. Captions are on by default; use the CC control to turn them off.</p>
+  <div class="segments" role="group" aria-label="Segments">
+    <span class="muted">Segments</span>
+    <button type="button" data-seg="opening" aria-pressed="true">Opening (1:07)</button>
+    <button type="button" data-seg="a" aria-pressed="false">Path A: Meet the request first (0:54)</button>
+    <button type="button" data-seg="b" aria-pressed="false">Path B: Lead with treatment (0:52)</button>
+  </div>
+  <p class="caption-line">When the opening ends, the player offers the two paths. After the first path, it prompts the student to watch the other before the debrief. Captions are on by default.</p>
   <details class="transcript">
-  <summary>Transcript: Marcus</summary>
+  <summary>Transcript: Opening</summary>
   <div class="transcript-body">
     <p class="muted">The video opens with a title card and a 10-second &ldquo;About This Video&rdquo; disclosure card; narration begins at about 0:14.</p>
 <p><span class="ts">0:14</span> <b>Narrator:</b> Marcus is a thirty-four-year-old veteran who has bravely served our country. Today, he walks into community services seeking emergency housing.</p>
@@ -561,12 +575,30 @@ header.site nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--gold
 <p><span class="ts">0:59</span> <b>Narrator:</b> You have now heard Marcus&#x27;s story. How do you respond?</p>
   </div>
 </details>
+  <details class="transcript">
+  <summary>Transcript: Path A, meet the request first</summary>
+  <div class="transcript-body">
+    <p class="muted">The segment opens with a short title card; narration begins at about 0:04. The &ldquo;About This Video&rdquo; disclosure card appears once, in the opening segment.</p>
+<p><span class="ts">0:04</span> <b>Narrator:</b> The worker takes the housing request first. She tells Marcus that a bed for tonight comes with no conditions, and asks what else he needs to get through the night.</p>
+<p><span class="ts">0:14</span> <b>Marcus:</b> Okay. That&#x27;s not what I expected. I had a whole speech ready for when you said no. <span class="nv">[pause]</span> Yeah, I could use a bed. And a shower. <span class="nv">[pause]</span> Look, since you&#x27;re not making this a thing. I use alone, mostly. Behind the storage units off Division. About a month ago I went out. Woke up with some guy slapping my face. I don&#x27;t know who he was. <span class="nv">[pause]</span> That scared me. I haven&#x27;t told anybody. I&#x27;m not asking for rehab. I&#x27;m just saying, if there&#x27;s something I can carry, for next time, I&#x27;d take that.</p>
+<p><span class="ts">0:42</span> <b>Narrator:</b> Marcus has told you about a close call. What has he just made possible, and how do you respond?</p>
+  </div>
+</details>
+  <details class="transcript">
+  <summary>Transcript: Path B, lead with treatment</summary>
+  <div class="transcript-body">
+    <p class="muted">The segment opens with a short title card; narration begins at about 0:04. The &ldquo;About This Video&rdquo; disclosure card appears once, in the opening segment.</p>
+<p><span class="ts">0:04</span> <b>Narrator:</b> The worker responds to the heroin disclosure first. She explains that the shelter beds she can offer require sobriety, and that a detox referral is the first step.</p>
+<p><span class="ts">0:14</span> <b>Marcus:</b> Right. There it is. I tell you the truth and now there&#x27;s a step. <span class="nv">[pause]</span> You know what the guy at the VA said? Almost word for word. Get clean, then we&#x27;ll talk about housing. Like I&#x27;m supposed to do that sleeping in my truck. <span class="nv">[pause]</span> You seem nice. I&#x27;m not mad at you. But I&#x27;ve done this intake before. I know how it ends. <span class="nv">[pause]</span> Forget the bed. I&#x27;ll figure it out like I always do. And don&#x27;t bother with the referral. I won&#x27;t be there.</p>
+<p><span class="ts">0:40</span> <b>Narrator:</b> Marcus has left without housing or a follow-up. What did he tell you about the VA, and what did you hear?</p>
+  </div>
+</details>
 </div>
       </div>
       <div class="case-text">
         <div class="info"><h4>Scenario</h4><p>Marcus is an honorably discharged veteran who presents at a community services agency requesting emergency housing. He discloses heroin use that started with pills after he was injured overseas. He is ambivalent about treatment and distrustful of the Department of Veterans Affairs (VA) after a prior experience he found dismissive.</p></div>
         <div class="info"><h4>Learning focus</h4><p>Students practice engagement responses to a client in the pre-contemplation stage and learn to prioritize intersecting needs: housing, substance use, trauma, and systemic distrust.</p></div>
-        <div class="info"><h4>Instructional design</h4><p>The avatar delivers a 1-minute intake narrative with one scripted decision point at which students choose a response. Nonverbal cues model ambivalence rather than acute distress.</p></div>
+        <div class="info"><h4>Instructional design</h4><p>The avatar delivers a 1-minute intake narrative that ends at a scripted decision point. The case then branches into two versions: in one (Path A), the worker meets the housing request first and without conditions; in the other (Path B), the worker responds to the heroin disclosure first and explains that shelter requires sobriety. Students choose a path within the video player and are then prompted to watch the other. In Path A, Marcus discloses that he uses alone and has had a recent overdose, and he asks, obliquely, for something he can carry: an opening for naloxone and a warm handoff that he would never have accepted as a &ldquo;program.&rdquo; In Path B, he hears the VA again, leaves without housing or a follow-up, and the opening never comes. Comparing the two surfaces what a conditions-first response costs. Nonverbal cues model ambivalence rather than acute distress.</p></div>
       </div>
     </div>
     <details class="ethics">
@@ -827,13 +859,12 @@ header.site nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--gold
     v.addEventListener('play',function(){ allVideos().forEach(function(o){ if(o!==v && !o.paused) o.pause(); }); });
   });
 
-  /* Desiree branching */
-  var v=document.getElementById('desiree-video');
-  if(v){
-    var ov=document.getElementById('desiree-overlay'), q=document.getElementById('desiree-q'), kick=document.getElementById('desiree-kicker'), box=document.getElementById('desiree-choices');
-    var SRC={opening:'media/case2-desiree-opening', a:'media/case2-desiree-path-a', b:'media/case2-desiree-path-b'};
+  /* Branched cases: a shared opening, a decision point, two paths, then a prompt to compare */
+  function branch(id, SRC, text){
+    var v=document.getElementById(id+'-video'); if(!v) return;
+    var ov=document.getElementById(id+'-overlay'), q=document.getElementById(id+'-q'), kick=document.getElementById(id+'-kicker'), box=document.getElementById(id+'-choices');
     var cur='opening', seen={opening:false,a:false,b:false};
-    var segBtns=[].slice.call(document.querySelectorAll('#desiree-branch .segments button'));
+    var segBtns=[].slice.call(document.querySelectorAll('#'+id+'-branch .segments button'));
     function load(seg,autoplay){
       cur=seg; ov.hidden=true; v.dataset.swapping='1';
       [].slice.call(v.querySelectorAll('track')).forEach(function(t){t.remove();});
@@ -851,18 +882,18 @@ header.site nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--gold
     function menu(){
       box.innerHTML='';
       if(cur==='opening'){
-        kick.textContent='Decision point'; q.textContent='Desiree has told you her plan. What do you do?';
-        box.appendChild(choice('a','Ask about Jay','Ask how she met him and what she knows about him.'));
-        box.appendChild(choice('b','Move on to the paperwork','Focus on her transition plan and do not ask about Jay.'));
+        kick.textContent='Decision point'; q.textContent=text.question;
+        box.appendChild(choice('a',text.a.title,text.a.sub));
+        box.appendChild(choice('b',text.b.title,text.b.sub));
       } else {
         var other=cur==='a'?'b':'a';
         if(!seen[other]){
           kick.textContent='Now compare';
-          q.textContent= cur==='a' ? 'You asked about Jay. Now see what happens when the caseworker moves on instead.' : 'You moved on. Now see what happens when the caseworker asks about Jay.';
-          box.appendChild(other==='a' ? choice('a','Watch Path A: Ask about Jay','The caseworker asks how she met Jay.') : choice('b','Watch Path B: Move on to the paperwork','The caseworker does not ask about Jay.'));
+          q.textContent= cur==='a' ? text.afterA : text.afterB;
+          box.appendChild(choice(other,'Watch Path '+other.toUpperCase()+': '+text[other].title,text[other].compare));
         } else {
           kick.textContent='Both paths complete';
-          q.textContent='Before the debrief, compare what each conversation revealed and what the smoother meeting missed.';
+          q.textContent=text.done;
         }
         box.appendChild(choice('opening','Watch the opening again','Return to the start of the case.'));
       }
@@ -870,9 +901,27 @@ header.site nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--gold
     }
     v.addEventListener('ended',function(){ seen[cur]=true; menu(); });
     v.addEventListener('play',function(){ ov.hidden=true; });
-    document.getElementById('desiree-replay').addEventListener('click',function(){ load(cur,true); });
+    document.getElementById(id+'-replay').addEventListener('click',function(){ load(cur,true); });
     segBtns.forEach(function(b){ b.addEventListener('click',function(){ load(b.getAttribute('data-seg'),true); }); });
   }
+
+  branch('marcus',
+    {opening:'media/case1-marcus', a:'media/case1-marcus-path-a', b:'media/case1-marcus-path-b'},
+    {question:'You have heard Marcus’s story. How do you respond?',
+     a:{title:'Meet the request first', sub:'Offer a bed for tonight with no conditions and ask what else he needs.', compare:'The worker takes the housing request first.'},
+     b:{title:'Lead with treatment', sub:'Explain that shelter requires sobriety and start with a detox referral.', compare:'The worker responds to the heroin disclosure first.'},
+     afterA:'You met the request first. Now see what happens when the worker leads with treatment instead.',
+     afterB:'You led with treatment. Now see what happens when the worker meets the request first.',
+     done:'Before the debrief, compare what Marcus disclosed in each conversation and what the conditions-first response closed off.'});
+
+  branch('desiree',
+    {opening:'media/case2-desiree-opening', a:'media/case2-desiree-path-a', b:'media/case2-desiree-path-b'},
+    {question:'Desiree has told you her plan. What do you do?',
+     a:{title:'Ask about Jay', sub:'Ask how she met him and what she knows about him.', compare:'The caseworker asks how she met Jay.'},
+     b:{title:'Move on to the paperwork', sub:'Focus on her transition plan and do not ask about Jay.', compare:'The caseworker does not ask about Jay.'},
+     afterA:'You asked about Jay. Now see what happens when the caseworker moves on instead.',
+     afterB:'You moved on. Now see what happens when the caseworker asks about Jay.',
+     done:'Before the debrief, compare what each conversation revealed and what the smoother meeting missed.'});
 
   /* Checklist */
   var out=document.getElementById('ck-count');
