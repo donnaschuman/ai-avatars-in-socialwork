@@ -124,6 +124,7 @@ main section.block{padding:80px 0}
 .tablist button[aria-selected="true"] .tab-num,.tablist button[aria-selected="true"] .tab-name,.tablist button[aria-selected="true"] .tab-skill{color:#fff}
 .tablist button:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
 
+.case[role="tabpanel"]{scroll-margin-top:88px}
 .case-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border-top:8px solid var(--case);padding:32px 36px 28px}
 .case-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:18px 32px;margin:0 0 18px}
 .case-title{display:flex;align-items:center;gap:18px}
@@ -784,16 +785,22 @@ header.site nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--gold
   /* Tabs */
   var tabs=[].slice.call(document.querySelectorAll('[role="tab"]'));
   function allVideos(){return [].slice.call(document.querySelectorAll('video.cv'));}
-  function select(tab,focus){
+  function select(tab,focus,scroll){
+    var panel=null;
     tabs.forEach(function(t){
       var on=t===tab; t.setAttribute('aria-selected',on?'true':'false'); t.tabIndex=on?0:-1;
-      document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
+      var p=document.getElementById(t.getAttribute('aria-controls')); p.hidden=!on; if(on) panel=p;
     });
     allVideos().forEach(function(v){v.pause();});
     if(focus) tab.focus();
+    /* Bring the chosen case into view; the tab cards push it below the fold on most screens */
+    if(scroll&&panel){
+      var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+      panel.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});
+    }
   }
   tabs.forEach(function(t,i){
-    t.addEventListener('click',function(){select(t,false);});
+    t.addEventListener('click',function(){select(t,false,true);});
     t.addEventListener('keydown',function(e){
       var k=e.key, j=null;
       if(k==='ArrowRight'||k==='ArrowDown') j=(i+1)%tabs.length;
@@ -887,7 +894,7 @@ header.site nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--gold
 
   /* Hero portraits open their case */
   [].slice.call(document.querySelectorAll('.faces a[data-case]')).forEach(function(a){
-    a.addEventListener('click',function(){ var t=document.getElementById('tab-'+a.getAttribute('data-case')); if(t) select(t,false); });
+    a.addEventListener('click',function(e){ var t=document.getElementById('tab-'+a.getAttribute('data-case')); if(t){ e.preventDefault(); select(t,false,true); } });
   });
 
 })();
