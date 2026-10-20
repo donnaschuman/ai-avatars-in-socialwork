@@ -1,10 +1,10 @@
 {
   "title": "AI Avatars in Social Work Education",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "upload_type": "lesson",
-  "publication_date": "2026-10-17",
-  "description": "Open educational resource (interactive web guide; CC BY-NC 4.0) developed for the UTA Center for Research on Teaching and Learning Excellence (CRTLE) Professional Learning Community, Future-Ready Teaching: Artificial Intelligence, 2025–2026. Provides four branching AI avatar case videos (each with an on-screen decision point and two practice paths), case-based teaching strategies, and ethics guidance for using AI avatars in social work education. Released April 13, 2026; major revision September 23, 2026; branching case videos added October 17, 2026. Live at https://ai-avatars-in-socialwork.netlify.app",
-  "creators": [{"name": "Schuman, D. L.", "affiliation": "The University of Texas at Arlington"}],
+  "publication_date": "2026-10-20",
+  "description": "Open educational resource (interactive web guide; CC BY-NC 4.0) developed for the UTA Center for Research on Teaching and Learning Excellence (CRTLE) Professional Learning Community, Future-Ready Teaching: Artificial Intelligence, 2025–2026. Provides four branching AI avatar case videos (each with an on-screen decision point and two practice paths), case-based teaching strategies, and ethics guidance for using AI avatars in social work education. Released April 13, 2026; major revision September 23, 2026; branching case videos added October 17, 2026; co-author citation, AI-use statement, and creator wording updated October 20, 2026. Live at https://ai-avatars-in-socialwork.netlify.app",
+  "creators": [{"name": "Schuman, D. L.", "affiliation": "The University of Texas at Arlington"}, {"name": "Bartlett, T."}],
   "license": "cc-by-nc-4.0",
   "keywords": ["social work education", "artificial intelligence", "AI avatars", "ethics", "open educational resource"],
   "related_identifiers": [{"identifier": "https://ai-avatars-in-socialwork.netlify.app", "relation": "isIdenticalTo", "resource_type": "lesson"}]
