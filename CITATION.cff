@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this resource, please cite it as below."
 title: "AI Avatars in Social Work Education"
-version: 2.2.0
-date-released: 2026-10-17
+version: 2.2.1
+date-released: 2026-10-20
 url: "https://ai-avatars-in-socialwork.netlify.app"
 license: CC-BY-NC-4.0
 type: software
@@ -10,6 +10,8 @@ authors:
   - family-names: "Schuman"
     given-names: "D. L."
     affiliation: "The University of Texas at Arlington"
+  - family-names: "Bartlett"
+    given-names: "T."
 keywords:
   - social work education
   - artificial intelligence
